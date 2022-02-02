@@ -109,9 +109,6 @@ namespace SistemaCadastro
             // 
             this.comboEC.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboEC.FormattingEnabled = true;
-            this.comboEC.Items.AddRange(new object[] {
-            "Solteiro",
-            "Casado"});
             this.comboEC.Location = new System.Drawing.Point(228, 90);
             this.comboEC.Name = "comboEC";
             this.comboEC.Size = new System.Drawing.Size(318, 33);
@@ -201,6 +198,7 @@ namespace SistemaCadastro
             this.btnCadastrar.TabIndex = 12;
             this.btnCadastrar.Text = "Cadastrar / Alterar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // btnExcluir
             // 
@@ -211,6 +209,7 @@ namespace SistemaCadastro
             this.btnExcluir.TabIndex = 13;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnLimpar
             // 
@@ -221,6 +220,7 @@ namespace SistemaCadastro
             this.btnLimpar.TabIndex = 14;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // Form1
             // 
@@ -245,6 +245,7 @@ namespace SistemaCadastro
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
