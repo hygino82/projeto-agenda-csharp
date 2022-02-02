@@ -190,6 +190,7 @@ namespace SistemaCadastro
             this.lista.Name = "lista";
             this.lista.Size = new System.Drawing.Size(668, 229);
             this.lista.TabIndex = 11;
+            this.lista.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lista_MouseDoubleClick);
             // 
             // btnCadastrar
             // 
