@@ -46,6 +46,7 @@ namespace SistemaCadastro
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
+            this.radioO = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -147,12 +148,13 @@ namespace SistemaCadastro
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.radioO);
             this.groupBox1.Controls.Add(this.radioF);
             this.groupBox1.Controls.Add(this.radioM);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(226, 237);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(143, 104);
+            this.groupBox1.Size = new System.Drawing.Size(143, 131);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sexo";
@@ -184,7 +186,7 @@ namespace SistemaCadastro
             this.lista.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lista.FormattingEnabled = true;
             this.lista.ItemHeight = 25;
-            this.lista.Location = new System.Drawing.Point(24, 430);
+            this.lista.Location = new System.Drawing.Point(24, 459);
             this.lista.Name = "lista";
             this.lista.Size = new System.Drawing.Size(668, 229);
             this.lista.TabIndex = 11;
@@ -192,7 +194,7 @@ namespace SistemaCadastro
             // btnCadastrar
             // 
             this.btnCadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrar.Location = new System.Drawing.Point(24, 366);
+            this.btnCadastrar.Location = new System.Drawing.Point(24, 395);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(198, 45);
             this.btnCadastrar.TabIndex = 12;
@@ -203,7 +205,7 @@ namespace SistemaCadastro
             // btnExcluir
             // 
             this.btnExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExcluir.Location = new System.Drawing.Point(259, 366);
+            this.btnExcluir.Location = new System.Drawing.Point(259, 395);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(198, 45);
             this.btnExcluir.TabIndex = 13;
@@ -214,13 +216,24 @@ namespace SistemaCadastro
             // btnLimpar
             // 
             this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpar.Location = new System.Drawing.Point(494, 366);
+            this.btnLimpar.Location = new System.Drawing.Point(494, 395);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(198, 45);
             this.btnLimpar.TabIndex = 14;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            // 
+            // radioO
+            // 
+            this.radioO.AutoSize = true;
+            this.radioO.Location = new System.Drawing.Point(6, 96);
+            this.radioO.Name = "radioO";
+            this.radioO.Size = new System.Drawing.Size(83, 29);
+            this.radioO.TabIndex = 2;
+            this.radioO.TabStop = true;
+            this.radioO.Text = "Outro";
+            this.radioO.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -272,6 +285,7 @@ namespace SistemaCadastro
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.RadioButton radioO;
     }
 }
 
